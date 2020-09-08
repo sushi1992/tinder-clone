@@ -1,0 +1,65 @@
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 70px;
+    border-bottom: 1px solid #fafafa;
+}
+
+/* for the anchors - text decoration can remove the underline 
+from a link and will inherit it's parent colour */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* flex 1 basically tells css that the class (container) that
+ we are adding this to means it takes precedence, has more weight
+ than the other containers, so it is a bit like doing a * in XAML 
+ where it is telling the container to take up all the space it can.
+ We kind of need to have justify-content set to space-between to
+ really see what this is doing.*/
+.chat__details {
+    flex: 1;
+}
+
+/* So we want to change the colour of the p specifically for chat
+details to gray */
+.chat__details > p {
+    color: gray;
+}
+
+.chat__image {
+    margin-right: 20px;
+}
+
+.chat__timestamp {
+    color: lightgray;
+}
+
+.chatScreen__input {
+    display: flex;
+    padding: 5px;
+
+    /* fix the position to the bottom */
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+
+.chatScreen__inputField {
+    flex: 1;
+    padding: 10px;
+    border: none;
+}
+
+.chatScreen__inputButton {
+    border: none;
+    margin-right: 20px;
+    background-color: white;
+    font-weight: bolder;
+    color: #fe3d71;
+}

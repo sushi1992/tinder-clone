@@ -1,0 +1,28 @@
+.chatScreen_message {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.chatScreen__text {
+    margin-left: 10px;
+    background-color: lightgray;
+
+    /* These 2 are what makes a fat cornered border :D */
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.chatScreen__textUser {
+    margin-left: auto;
+    background-color: #29b3cd;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.chatScreen__timestamp {
+    padding: 20px;
+    text-align: center;
+    color: gray;
+}

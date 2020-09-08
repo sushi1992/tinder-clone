@@ -1,0 +1,10 @@
+{
+    "expo": {
+        "name": "excite",
+        "slug": "excite"
+    },
+    "packagerOpts": {
+        "sourceExts": ["js", "json", "ts", "tsx", "jsx", "vue"],
+        "config": "metro.config.js"
+    }
+}
